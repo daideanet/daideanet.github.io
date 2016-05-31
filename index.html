@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <title>My first portfolio site</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
@@ -12,7 +12,96 @@
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
+  <style>
+    body {
+      font-size: 14px;
+    }
+    
+.container {
+  max-width: 800px;
+  margin: 500px auto 0;
+  background-color: #fff;
+}
+
+section {
+  padding: 30px 20px;
+}
+
+section h2 {
+  padding: 10px 0 20px 0;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+    
+footer {
+  padding: 20px 0;
+  font-size: 93%;
+  text-align: center;
+  background-color: #ccc;
+  color: #666;
+}
+      
+  </style>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <h1>Portfolio is powerful</h1>
+<div id="navbar-main">
+<!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <img src="logo.png" class="logo"/>
+      </button>
+      <a class="navbar-brand hidden-xs hidden-sm" href="#home"> <img src="img/logo.png" class="logo"/></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      <li><a href="#home">ホーム</a></li>
+      <li> <a href="#home">ポートフォリオ</a></li>
+      <li> <a href="#base">お問い合わせ先</a></li>
+      <li> <a href="#forms">ご挨拶</a></li>
+    </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+    </header>    
+
+    <div class="container">
+      
+  <div class="col-lg-12">
+    <div class="col-md-3">
+     <img src="port1.jpg" alt="" class="img-rounded img-responsive">
+    </div>
+    <div class="col-md-3">
+     <img src="port2.jpg" alt="" class="img-circle img-responsive">
+    </div>
+    <div class="col-md-3">
+      <img src="port1.jpg" alt="" class="img-thumbnail img-responsive"> 
+    </div>
+  </div>
+  
+      <section>
+        <h2>About</h2>
+        <h3>自己紹介</h3>
+        <p>煌木 太郎（プログラマー）</p>
+        <p>東京都渋谷区出身。フリーランスで活動しています。</p>
+        <p>最近は、<span class="red">Ruby on Rails</span> を使って仕事をする機会が多くなりました。</p>
+        <p>私のポートフォリオを見て気になった方は、<a href="contact.html">Contact</a>よりご連絡お願い致します。</p>
+
+    <address id="contact">
+    <h3>ご連絡はこちらまで</h3>
+    <p><span class="glyphicon glyphicon-home"></span> TOKYO, Japan<br/>
+    <span class="glyphicon glyphicon-phone"></span> +34 1234 5678 <br/>
+    <span class="glyphicon glyphicon-folder-open"></span>  <a href="https://daideanet.github.io/">https://daideanet.github.io/</a> <br/>
+    </p>
+    </address>  
+      </section>
+      
+      <footer>
+        <p>&copy; 2015 Daisuke Komatsu.</p>
+      </footer>
+    </div>
+
   </body>
 </html>
